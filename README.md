@@ -34,6 +34,7 @@ One day, I came up with the idea of putting a video through the reverberator. Wi
 extract the pixels of all frames of a video and so, the raw numbers are treated as an ordinary audio signal.
 Experimenting a bit with the parameters, it gets a "trippy" experience. A demo usage can be found in the 'video' branch.
 Get creative too - I'm looking forward for more things being reverbed :D.
+[Youtube](https://www.youtube.com/watch?v=Zhe2s2tFuAU)
 
 ### Building
 
