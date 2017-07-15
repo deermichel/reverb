@@ -33,24 +33,25 @@ result, feel free to contribute.
 One day, I came up with the idea of putting a video through the reverberator. With OpenCV, it is easy (in C++ ^^) to
 extract the pixels of all frames of a video and so, the raw numbers are treated as an ordinary audio signal.
 Experimenting a bit with the parameters, it gets a "trippy" experience. A demo usage can be found in the 'video' branch.
-Get creative too - I'm looking forward for more things being reverbed :D.
+Get creative too - I'm looking forward for more things being reverbed :D. (Would be funny to reverb a video and its
+audio as well).
 
 ### Building
 
-    // make sure to have cmake and libsndfile (if you want to use the demo main.cpp) installed
-    // on Mac, this can be simply done via Homebrew: brew install cmake libsndfile
+    // make sure to have cmake and opencv (if you want to use the demo main.cpp) installed
+    // on Mac, this can be simply done via Homebrew: brew install cmake opencv3
 
     git clone https://github.com/DeerMichel/reverb/
     cd reverb
+    git checkout video
     mkdir bin
     cd bin
     cmake ..
     make
-    cp ../misc/input.wav .    // or use your own audio file
+    cp ../misc/input.mov .    // or use your own video file
     ./ReverbMain
-    afplay output.wav         // or equivalent
 
-For a sample usage, take a look at the [main.cpp](https://github.com/DeerMichel/reverb/blob/master/src/main.cpp).
+For a sample usage, take a look at the [main.cpp](https://github.com/DeerMichel/reverb/blob/video/src/main.cpp).
 
 ### Missing features
 

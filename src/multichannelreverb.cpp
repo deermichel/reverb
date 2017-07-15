@@ -1,5 +1,6 @@
 #include "multichannelreverb.h"
 #include <assert.h>
+#include <iostream>
 
 // creates a new multi-channel-reverb of given order
 MultiChannelReverb::MultiChannelReverb(const int order, const int maxNumSamples, const int numChannels):
@@ -25,6 +26,10 @@ MultiChannelReverb::~MultiChannelReverb() {
 void MultiChannelReverb::process(double **inputs, double **outputs, const int numSamples) {
   for (int i = 0; i < mNumChannels; i++) {
     mReverbs[i]->process(inputs[i], outputs[i], numSamples);
+
+    if (i % 10000 == 0) {
+      std::cout << (100.0 * i / mNumChannels) << "%" << std::endl;
+    }
   }
 }
 
