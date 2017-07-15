@@ -24,7 +24,7 @@ result, feel free to contribute.
 * [CircularBuffer](https://github.com/DeerMichel/reverb/blob/master/include/circularbuffer.h) - cyclic array
   implementation used as buffer
 * [Reverb](https://github.com/DeerMichel/reverb/blob/master/include/reverb.h) - main part doing the algorithm work
-  and holds all parameters
+  and holding all parameters
 * [MultiChannelReverb](https://github.com/DeerMichel/reverb/blob/master/include/multichannelreverb.h) - helper class
   to create and manage multiple reverb instances at once (e.g. for stereo application)
 
@@ -32,12 +32,12 @@ result, feel free to contribute.
 
 One day, I came up with the idea of putting a video through the reverberator. With OpenCV, it is easy (in C++ ^^) to
 extract the pixels of all frames of a video and so, the raw numbers are treated as an ordinary audio signal.
-Experimenting a bit with the parameters, it gets a trippy experience. A demo usage can be found in the 'video' branch.
+Experimenting a bit with the parameters, it gets a "trippy" experience. A demo usage can be found in the 'video' branch.
 Get creative too - I'm looking forward for more things being reverbed :D.
 
 ### Building
 
-    // make sure you have cmake and libsndfile (if you want to use the demo main.cpp) installed
+    // make sure to have cmake and libsndfile (if you want to use the demo main.cpp) installed
     // on Mac, this can be simply done via Homebrew: brew install cmake libsndfile
 
     git clone https://github.com/DeerMichel/reverb/
