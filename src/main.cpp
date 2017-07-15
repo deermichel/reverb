@@ -23,8 +23,8 @@ int main(int argc, char *argv[]) {
 	MultiChannelReverb reverb(8, fileInfo.frames, fileInfo.channels);
 	reverb.setFeedDryIn(0.2);
 	reverb.setFeedWetOut(0.2);
-	reverb.setDrySignalMix(0.6);
-	reverb.setDelayTapTime(6012);
+	reverb.setDrySignalMix(0.7);
+	reverb.setDelayTapTime(7012);
 	reverb.setDecay(0.95);
 
 	// process
